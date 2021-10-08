@@ -1,11 +1,11 @@
 # Maintainer: Esmail EL BoB <aur.valj8@simplelogin.co>
 
-pkgname="wine-roblox-git" # '-bzr', '-git', '-hg' or '-svn'
-pkgver=r.
+pkgname="wine-roblox-bin" # '-bzr', '-git', '-hg' or '-svn'
+pkgver=r2.478f4de
 pkgrel=1
 pkgdesc="Wine-tkg with custom roblox mouse patch"
 arch=('x86_64')
-url="https://github.com/Frogging-Family/wine-tkg-git"
+url="https://github.com/EsmailELBoBDev2/wine-tkg-roblox-mouce-patch"
 license=('GNU GPL V3')
 makedepends=('git')
 md5sums=()
@@ -23,10 +23,8 @@ pkgver() {
 
 build() {
 	cd "$pkgname"
-	git clone --depth=1 https://github.com/Frogging-Family/wine-tkg-git.git .
-	cd wine-tkg-git/
-    sed 's/_community_patches=""/_community_patches="roblox_mouse_fix.mypatch"/' -i customization.cfg
-	makepkg -si
+	git clone --depth=1 https://github.com/EsmailELBoBDev2/wine-tkg-roblox-mouce-patch .
+    sudo pacman -U wine-tkg-staging-fsync-git-*.pkg.tar.zst
 }
 
 package() {
