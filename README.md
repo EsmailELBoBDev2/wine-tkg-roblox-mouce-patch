@@ -4,21 +4,23 @@
 
 # How to use:
 
-* If you love aur (who does not?)
-1. If you love git and compiling!
+***If you love aur (who does not?)***
+* If you love git and compiling!
 ```
 yay -S wine-roblox-git
 ```
-2. If you lazy and want binary!
+* If you lazy and want binary!
 ```
 wine-roblox-bin
 ```
-* If you do not want aur (arr!)
-1. download binary file (that ends with `pkg.tar.zst`) and:
+***If you do not want aur (arr!)***
+* download binary file (that ends with `pkg.tar.zst`) and:
 ```
 sudo pacman -U {BINARY-FILE}.pkg.tar.zst
 ```
-2. compiling: Follow  [https://roblox.fandom.com/wiki/Tutorial:Using_Roblox_on_Linux#Wine-tkg_build_process_on_pacman.2Fmakepkg_distros_.28Arch-based_distros.29](https://roblox.fandom.com/wiki/Tutorial:Using_Roblox_on_Linux#Wine-tkg_build_process_on_pacman.2Fmakepkg_distros_.28Arch-based_distros.29)
+(*dependencies will be same as wine/wine staging*)
+
+* If you gentoo type, compile it: Follow  [https://roblox.fandom.com/wiki/Tutorial:Using_Roblox_on_Linux#Wine-tkg_build_process_on_pacman.2Fmakepkg_distros_.28Arch-based_distros.29](https://roblox.fandom.com/wiki/Tutorial:Using_Roblox_on_Linux#Wine-tkg_build_process_on_pacman.2Fmakepkg_distros_.28Arch-based_distros.29)
 
 # Some Thanks:
 1. God (yes i'm doing this)
